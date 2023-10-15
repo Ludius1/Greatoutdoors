@@ -1,0 +1,288 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Gabarito', cursive;
+    color: #F8F8F8;
+    background-color: #0A0A0C;
+}
+a {
+    line-height: 1.4;
+    color: #e9e1ff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.hero-img {
+    background: url(img/bgg.png);
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu, .exit {
+    display: none;
+}
+.logo {
+    font-size: 20px;
+}
+ul li a:hover {
+    color: #d0d0ff;
+}
+header {
+    padding: 30px 18%;
+}
+
+.header.sticky {
+    background: #d0d0ff;
+    padding: 13px 18%;
+    box-shadow: 0px 0px 10px rbg(0 0 0 / 10%);
+}
+section {
+    margin-top: 400px;
+    padding: 20px 18%;
+}
+
+.hero {
+    margin: 150px auto 0 auto;
+    height: 300px;
+}
+.sub-head {
+    text-align: center;
+    display: block;
+    justify-content: center;
+}
+.hero-text {
+    color: #F0F0FD;
+    font-family: DM Serif Display;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+}
+.btn {
+    padding: 15px 35px;
+    margin: 100px auto;
+    border-radius: 5px;
+    border: 1px solid #F8F8F8;
+    background: rgba(217, 217, 217, 0.13);
+    color: #e9e1ff;
+    font-family: 'Gabarito', cursive;
+    transition: 0.2s ease-in;
+}
+.explore {
+    align-items: center;
+    text-align: center;
+}
+.explore .sub-head {
+    text-align: center;
+}
+.explore .sub-head h2 {
+    color: #F8F8F8;
+    font-size: 40px;
+    font-weight: 450;
+    margin: 10px 0;
+}
+.explore .sub-head p {
+    color: #d1d1d1;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.1;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 100px;
+    align-items: center;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.box-text {
+    margin-top: -80px;
+}
+.box-text h3 {
+    color: #FFF;
+    font-family: DM Serif Display;
+    font-size: 25px;
+    font-weight: 400;   
+}
+.btn-more {
+    text-align: center;
+    margin: 100px 0;
+    text-decoration: underline;
+    color: #d0d0ff;
+    font-weight: 200;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #d0d0ff;
+    color: #0A0A0C;
+}
+.journal {
+    margin-top: 80px;
+    padding: 20px 18%;
+}
+footer .journal {
+    text-align: center;
+}
+.journal .sub-head h2 {
+    color: #F8F8F8;
+    font-size: 40px;
+    font-weight: 450;
+    margin: 10px 0;
+}
+.journal .sub-head p {
+    color: #d1d1d1;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.1;
+}
+.journal-text {
+    text-align: center;
+}
+.journal-text h4 {
+    color: #F8F8F8;
+    font-family: Neue Helvetica;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-top: 30px;
+
+}
+.journal-text h3 {
+    color: #F8F8F8;
+    font-family: DM Serif Display;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-top: 20px;
+    padding: 0 10%;
+}
+.journal-text p {
+    color: #F8F8F8;
+    text-align: center;
+    font-family: Neue Helvetica;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-top: 30px;
+    padding: 0 10%;
+}
+.footer {
+    background: url(img/FOOTER.png);
+    z-index: -1;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.ece {
+    margin-top: 100px;
+}
+.foot-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    margin: 150px auto 0;
+}
+
+.foot-nav h2 {
+    font-size: 13px;
+}
+.foot-nav ul  li{
+    padding: 0 20px;
+}
+.foot-nav ul li a:hover{
+    text-decoration: dashed;
+}
+.logo-mobile {
+    display: none;
+}
+.navcol {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    top: 0;
+    width: 55%;
+}
+.box {
+    width: 100%;
+}
+
+
+@media (max-width: 950px) {
+    nav ul {
+        display: none;
+    }
+    .logo-mobile {
+        display: block;
+    }
+    .menu, .exit {
+        display: block;
+    }
+    .mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header {
+        padding: 30px 10%;
+    }
+    section {
+        padding: 0 15%;
+    }
+    .journal, footer {
+        padding: 0 15%;
+    }
+    .journal .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 100px;
+        align-items: center;
+        margin-top: 50px;
+        cursor: pointer;
+        justify-content: center;
+    }
+    .foot-nav {
+        display: flex;
+        
+    }
+
+}
+@media (max-width:500px) {
+    .journal {
+        padding: 0 18px;
+        overflow: hidden;
+
+    }
+    .sub-head h2 {
+        font-size: 32px;
+    }
+    .sub-head .hero-text {
+        font-size: 80px;
+    }
+    .ece h1 {
+        font-size: 75px;
+    }
+
+}
